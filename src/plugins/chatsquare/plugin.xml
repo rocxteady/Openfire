@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin>
+    <class>org.jivesoftware.openfire.plugin.ChatSquarePlugin</class>
+    <name>ChatSquare Service</name>
+    <description>ChatSquare Service</description>
+    <author>Ulas Sancak</author>
+    <version>1.0.0</version>
+    <date>03/01/2016</date>
+    <minServerVersion>3.10.0</minServerVersion>
+</plugin>
