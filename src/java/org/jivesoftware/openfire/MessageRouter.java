@@ -141,6 +141,13 @@ public class MessageRouter extends BasicModule {
                         log.error("Failed to route packet: " + packet.toXML(), e);
                         routingFailed(recipientJID, packet);
                     }
+                    
+                    Message receivedMessage = new Message();
+                    receivedMessage.setID(packet.getID());
+                    receivedMessage.setTo(packet.getFrom());
+                    receivedMessage.setFrom(packet.getTo());
+                    receivedMessage.addChildElement("server-received", "server-received");
+                    routingTable.routePacket(receivedMessage.getTo(), receivedMessage, false);
 
                     // Sent carbon copies to other resources of the sender:
                     // When a client sends a <message/> of type "chat"
