@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/i18n"/>
+	<classpathentry kind="src" path="src/resources/jar"/>
+	<classpathentry kind="src" path="build/lib/dist"/>
 	<classpathentry kind="src" output="work/plugins-dev/dbaccess/target/classes" path="src/plugins/dbaccess/src/java"/>
 	<classpathentry kind="src" output="work/plugins-dev/monitoring/target/classes" path="src/plugins/monitoring/src/java"/>
 	<classpathentry kind="src" output="work/plugins-dev/nodejs/target/classes" path="src/plugins/nodejs/src/java"/>
 	<classpathentry kind="src" output="work/plugins-dev/restAPI/target/classes" path="src/plugins/restAPI/src/java"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/throttletest/src"/>
+	<classpathentry kind="src" path="src/plugins/chatsquare/src/java"/>
 	<classpathentry kind="lib" path="build/lib/ant/ant-contrib.jar"/>
 	<classpathentry kind="lib" path="build/lib/cglib-nodep.jar"/>
 	<classpathentry kind="lib" path="build/lib/dist/hsqldb.jar"/>
@@ -66,7 +70,23 @@
 	<classpathentry kind="lib" path="src/test/throttletest/build/lib/smackx.jar"/>
 	<classpathentry kind="lib" path="src/web/WEB-INF/lib/commons-fileupload.jar"/>
 	<classpathentry kind="lib" path="src/web/WEB-INF/lib/commons-io.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="src/plugins/chatsquare/lib/apns-1.0.0.Beta6-jar-with-dependencies.jar" sourcepath="src/plugins/chatsquare/lib/apns-1.0.0.Beta6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/openfire/src/plugins/chatsquare/lib/apns-1.0.0.Beta6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/plugins/chatsquare/lib/gson-2.8.0.jar" sourcepath="src/plugins/chatsquare/lib/gson-2.8.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/openfire/src/plugins/chatsquare/lib/gson-2.8.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/plugins/chatsquare/lib/mongo-java-driver-3.4.1.jar" sourcepath="src/plugins/chatsquare/lib/mongo-java-driver-3.4.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/openfire/src/plugins/chatsquare/lib/mongo-java-driver-3.4.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/plugins/chatsquare/lib/mysql-connector-java-5.1.40.jar" sourcepath="src/plugins/chatsquare/lib/mysql-connector-java-5.1.40-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="build/lib/merge/jetty-jmx.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-integration-jmx.jar"/>
 	<classpathentry kind="lib" path="build/lib/dist/bcpg-jdk15on.jar"/>
