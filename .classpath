@@ -86,6 +86,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="src/plugins/chatsquare/lib/mysql-connector-java-5.1.40.jar" sourcepath="src/plugins/chatsquare/lib/mysql-connector-java-5.1.40-sources.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jackson-core-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jackson-mapper-asl-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jackson-xc-1.9.2.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jersey-servlet-1.18.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="src/plugins/restAPI/lib/jsr311-api-1.1.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="build/lib/merge/jetty-jmx.jar"/>
 	<classpathentry kind="lib" path="build/lib/merge/mina-integration-jmx.jar"/>
